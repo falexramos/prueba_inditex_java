@@ -5,7 +5,7 @@ Este proyecto es una solución para la prueba técnica de Inditex, donde se requ
 <h2>Requisitos</h2>
 <ul> <li> Java 11</li></ul> 
 <ul> <li> Maven 3.6.3</li></ul> 
-
+<ul> <li> Capa de datos H2 en memoria </li></ul> 
 
 <h2>Instalación</h2>
 <ul> <li>1. Descargar el repositorio en su equipo local </li></ul> 
@@ -14,19 +14,5 @@ Este proyecto es una solución para la prueba técnica de Inditex, donde se requ
 
 <h2>Recursos</h2>
 <p>En la caprte de Postman se encuentra un archivo .json que puede importar para cargar datos de prueba o cargar nuevos datos. <br></br>El proyecto incluye una colección de Postman que permite realizar pruebas al endpoint rest</p>
-<h2></h2>
-<h2></h2>
 
-<ul> <li> </li></ul> 
-<ul> <li> </li></ul> 
-
-
-<h2>La aplicación acepta como parámetros de entrada: fecha de aplicación, identificador de producto, identificador de cadena. Y devuelve como datos de salida:</h2>
-
-identificador de producto "PRODUCT_ID",
-identificador de cadena "BRAND_ID",
-tarifa a aplicar "PRIORITY",
-fechas de aplicación "START_DATE" "END_DATE"
-y precio final a aplicar "PRICE".
-La base de datos se implementa en memoria (tipo h2) y se inicializa con los datos del ejemplo.
 
