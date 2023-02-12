@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "cd2b6d49-e054-4ed5-bc4c-07cd885365a8",
+		"name": "inditex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/prices/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"brandId\":1,\r\n\t\"startDate\":null,\r\n\t\"endDate\":\"2020-12-31T23:59:59.0000\",\r\n\t\"priceList\":4,\t\r\n\t\"productId\":35455,\t\r\n\t\"priority\":1,\r\n    \"price\":\"38.95\",\r\n\t\"curr\":\"EUR\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/prices/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/prices/crearVarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n\t\"brandId\":1,\r\n\t\"startDate\":\"2020-06-14T00:00:00.0000\",\r\n\t\"endDate\":\"2020-12-31T23:59:59.0000\",\r\n\t\"priceList\":1,\t\r\n\t\"productId\":35455,\t\r\n\t\"priority\":0,\r\n    \"price\":\"35.50\",\r\n\t\"curr\":\"EUR\"\r\n},\r\n{\r\n    \"brandId\":1,\r\n\t\"startDate\":\"2020-06-14T15:00:00.0000\",\r\n\t\"endDate\":\"2020-06-14T18:30:00.0000\",\r\n\t\"priceList\":2,\t\r\n\t\"productId\":35455,\t\r\n\t\"priority\":1,\r\n    \"price\":\"25.45\",\r\n\t\"curr\":\"EUR\"\r\n},\r\n\r\n{\r\n    \"brandId\":1,\r\n\t\"startDate\":\"2020-06-15T00:00:00.0000\",\r\n\t\"endDate\":\"2020-06-15T11:00:00.0000\",\r\n\t\"priceList\":3,\t\r\n\t\"productId\":35455,\t\r\n\t\"priority\":1,\r\n    \"price\":\"30.50\",\r\n\t\"curr\":\"EUR\"\r\n},\r\n\r\n{\r\n    \"brandId\":1,\r\n\t\"startDate\":\"2020-06-15T16:00:00.0000\",\r\n\t\"endDate\":\"2020-12-31T23:59:59.0000\",\r\n\t\"priceList\":4,\t\r\n\t\"productId\":35455,\t\r\n\t\"priority\":1,\r\n    \"price\":\"38.95\",\r\n\t\"curr\":\"EUR\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/prices/crearVarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"crearVarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/prices/listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"brandId\":1,\r\n\t\"startDate\":\"\",\r\n\t\"endDate\":\"2020-06-18T23:59:59\",\r\n\t\"productId\":35455\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/prices/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/prices/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"brandId\": 1,\r\n    \"startDate\": \"2023-02-11T09:00:00.000+00:00\",\r\n    \"endDate\": \"2023-02-11T16:00:00.000+00:00\",\r\n    \"priceList\": 1,\r\n    \"productId\": 35455,\r\n    \"priority\": 0,\r\n    \"price\": 35.5,\r\n    \"curr\": \"EUR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/prices/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/prices/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/prices/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
