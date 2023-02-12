@@ -7,6 +7,8 @@ Este proyecto es una solución para la prueba técnica de Inditex, donde se requ
 <ul> <li> Maven 3.6.3</li></ul> 
 <ul> <li> Capa de datos H2 en memoria </li></ul> 
 
+<p>Para el desarrollo se utilizo Spring Framework</p>
+
 <h2>Instalación</h2>
 <ul> <li>1. Descargar el repositorio en su equipo local </li></ul> 
 <ul> <li> en la consola de git bash con el comando: git clone https://github.com/falexramos/prueba_inditex_java.git</li></ul> 
