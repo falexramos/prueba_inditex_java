@@ -8,6 +8,7 @@ Este proyecto es una solución para la prueba técnica de Inditex, donde se requ
 <ul> <li> Capa de datos H2 en memoria </li></ul> 
 
 <p>Para el desarrollo se utilizo Spring Framework</p>
+<p>Se utilizo Lombok, y Es necesario que Lombok esté integrado con el IDE</p>
 
 <h2>Instalación</h2>
 <ul> <li>1. Descargar el repositorio en su equipo local </li></ul> 
